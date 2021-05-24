@@ -5,34 +5,42 @@ Version 0.1, 23.05.2015
 :sectnums:         
 :toc:         
 :toclevels: 4                                          
-:toc-title: Authentische Daten Container       
+:toc-title: Authentische Daten Container         
 
-:description: Authentische Daten Containerdocumente per W3C VerifiableCredential
+:description: Authentische verkettete Daten Containerdokumente per W3C VerifiableCredential
 :keywords: VerifiableCredential, VC, ADC, ACDC
 :imagesdir: ./images
 
-Die Digitalisierung hat die Art des Zusammenlebens und Interkation im Zeitalter der digitalen Revolution komplett verändert.
-Digitale Assistenten sind uns täglich behilflich den Alltag zu meistern und angenehmer zu gestalten. 
-Heute arbeiten und vertrauen wir oft bind mit den digitalen Informationen, ohne eine Verbindlichkeit einzufordern. 
+=== Digitales Vertrauen und Rechtsicherheit  
 
-Wenn wir eine gewissen Gradn an Verbidlichkeit und Vertrauen benötigen, versuchen wir diese in der digitalen Welt oft mit alten Mitteln, die uns gedanklich noch nahestehen, wie zum Beispiel das Verlangen einer Handunterschrift und ein abschließender digitaler Scan, Laienhaft umzusetzen.
-Diese Hilflosigkeit eröffnet Digitalisierungsexperten einen große Angriffsfläche Informationen in ihrem Sinne zu verändern und auf das Geschehen Einfluss zu nehmen.
+.Motivation
+Die fortschreitende Digitalisierung hat die Art unseres Zusammenlebens und Interkation im Zeitalter der digitalen Revolution komplett verändert.
+Digitale Assistenten sind uns täglich behilflich den Alltag zu meistern und auch angenehmer zu gestalten. 
+Heute arbeiten und vertrauen wir oft bind den dort genutzten digitalen Informationen, ohne wirklich eine Verbindlichkeit und Echtheit einzufordern oder diese bestätigt zu bekommen. 
 
-Heute müssen alle digitale Informationen vor jeglicher Art der  Manipulation geschützt werden. Zudem müssen viele  Informationen authentisch, also vom Urheber unbestreitbar sein. Und schließlich muss die Richtigkeit prüfbar sein. 
+In einigen Fällen mag dies unerheblich sein, aber uns ist bewusst, dass in einigen Situationen einen gewissen Grad an Verbidlichkeit und Vertrauen benötigt wird. Nich allzu oft versuchen wir in der digitalen Welt diese mit althergebrachten Mitteln zu lösen, die uns IT Laien gedanklich nahestehen, wie zum Beispiel das Verlangen einer Handunterschrift auf einem ausgedrucktem Dokument, das nach einem digitalen Scan und abschließender Ablage in einem der vielen Dokumetengräbern -  Dokument Management Systeme (DMS) - wandern.
+Diese Hilflosigkeit eröffnet Digitalisierungsexperten eine große Angriffsfläche, Informationen in ihrem Sinne zu verändern und auf das Geschehen Einfluss zu nehmen. 
 
-Moderne Architekturen lösen diese mit zentralen oder föderalen Identity-Management Lösungen. Hier werden Identitäten verwaltet und durch Autorisierungsfunktionen wird ein Verknüpfung zwischen Information und Identität hergestellt, um einen digitalen Grad an Vertrauen zu schaffen. 
-Solche digitale Identitäten haben einen hohen Schutzbedarf, um den Diebstahl und Missbrauch zu verhindern. Ist ein Angreifer erst einmal im Besitz einer digitalen Identität, kann er sehr einfach verdeck Informationen manipulieren und großen Schaden anrichten. Die heute gänigen Lösungen die Verwaltung an den Dienstanbieter oder einen Dritten Identitätsverwalter (Identity Provider) abzugeben ist üblich – Google, Facebook, LinkedIn, oder die Bank, Onlineshop, usw. verwalten unsere Identitäten – führt zu einer Reihe von Problemen. Trauen wir wirklich dem Dienstleister? Ein Dienstleister kann mir meine Identität wegnehmen, sie sperren und mich aus dem digitalen Kreislauf nehmen, er kann mithören alle Tätigkeiten miteinander korrelieren, um mich oder die Umwelt zu beeinflussen. Dieder Kontrollverlust kann daramtische Folgen in einem .Datenecosystem.   
-Wollen wir das und sollen wir uns mit diesem Umstand abfinden? Nein, es wird also ein Konzept der selbstsouveränen Identitätsverwaltung in Kombination mit dezentralem digitalem Vertrauen notwendig. 
-In dem Papier konzentrieren wir uns auf das Herstellen von digitalem Vertrauen in Informationen und weniger um den Aspekt der selbstsouveränen Identitätsverwaltung, was jedoch ein Kernbaustein der Lösung darstellt und unabdingbar damit zusammenhängt. 
+Dem einfachen Treiben entgegen zu treten, sollten heute alle digitale Informationen vor jeglicher Art der Manipulation geschützt werden. Zudem soolten dei Informationen authentisch sein, also die Unbestreitbarkeit des Urhebers. Und schließlich muss die Richtigkeit der Informationen überprüfbar sein. 
+
+Moderne Architekturen lösen diese mit zentralen oder föderalen Identity-Management Lösungen. Hier werden Identitäten zentral verwaltet und durch Autorisierungsfunktionen wird ein Verknüpfung zwischen Information und Identität hergestellt, um einen  Grad an Vertrauen in der digitalen Welt zu schaffen. 
+Solche digitale Identitäten haben einen hohen Schutzbedarf, um den Diebstahl und Missbrauch zu verhindern. Ist ein Angreifer erst einmal im Besitz einer digitalen Identität, kann er sehr einfach verdeck Informationen manipulieren und großen Schaden anrichten. Die heute gänigen Lösungen geben dei Verwaltung an den Dienstanbieter oder einen Dritten Identitätsverwalter (Identity Provider) ab – Google, Facebook, LinkedIn, oder die Bank, Onlineshop, usw. verwalten unsere Identitäten, was zu einer Reihe von Problemen führt. 
+Trauen wir wirklich dem Dienstanbeiter? Ein Dienstanbeiter kann mir meine Identität wegnehmen, sie sperren und mich aus dem digitalen Kreislauf nehmen, er kann mithören alle Tätigkeiten miteinander korrelieren, um mich oder die Umwelt zu beeinflussen. Der danit einhergehende Kontrollverlust kann daramtische Folgen in einem modernen Datenecosystem haben.   
+Wollen wir das und sollen wir uns mit diesem Umstand heute und in Zukunft abfinden? **Nein**, es wird also ein Konzept der selbstsouveränen Identitätsverwaltung in Kombination mit dezentralem digitalem Vertrauen notwendig. 
 
 
+== Einleitung
+Uns wird oft erst im Fall von Betrug oder Feignews bewusst, dass das Internet ohne Identitätsnetzwerk (Identity Layer) geschaffen wurde. Über die Jahre haben sich unzählige properitäre Lösungen etabliert, die jedoch bis heute keinen durchschlagenden Erfolg erlangt haben. Entweder waren sie zu einseitig, zu schwer zu administrieren (PKI) oder zentral (die Internet-Architektur ist dezentral ausgelegt) bei Internet Gigaten (Identity-Providern) angesiedelt und deshalb nicht für jeden Anwendungsfall mit dem notwendigen Vertrauenslevel nutzbar.    
 
-== E
+Neue distruptive Technologien und neue Standards führen glücklicherweise gerade zu einem neuen interoperablen und breit akzeptierten Identity-Standard, also der fehlende dezentral agierende Identity Layer wird dem Internet zugefügt. 
+Bezeichtet wird der Standard oft unscharf mit dem Akronym SSI, was so viel wie selbstsouveräne und dezetral agierende Identitäsverwaltung bedeutet. Wichtige Standards dazu sind die W3C Dezentralen Identifyer (DID) [1], die verifizierbaren Berechtigungsnachweise (W3C - Verifiable Credentials) [2] und das Nachrichtenprotokoll DIDComm [3] der DIF Organisation.
+
+.Ziel 
+In dem Papier greifen wir das Konzept AUTHENTIC CHAINED DATA CONTAINERS (ACDC) von Samuel M. Smith Ph.D.[1] auf und  konzentrieren uns auf das Herstellen von digitalem Vertrauen in Informationen und weniger um den Aspekt der selbstsouveränen Identitätsverwaltung, die damit nahtlos zusammenhängt und ein  unabdingbar Kernbaustein der Lösung darstellt. 
 
 
 === Authentischer Datencontainer in Behörden und er Wirtschaft
-Das Konzept eines standardisierten authentischen Datencontainers (ADC) stellt in Analogie zu
-einem physischen Container in der Logistik (Versandbehälter) 
+Das Konzept eines standardisierten authentischen Datencontainers (ADC) stellt in Analogie zu einem physischen Container in der Logistik (Versandbehälter) 
 den vertrausnswürdigen und damit sicheren, rückverfolgbaren und manipulationssicheren Warentransport in einem interoperablen Transportökosystem dar.
 
 Container sind dazu in einem standartisierten Format und mit einer Serienkennung augezeichnet entworfe. Sie erhalten einen sicheren Verschluss und ein Siegel zur Manipulationssicherung.  Anhängende Lieferpapier tragen mit den notwendigen Bestätigungen (Stempel/Unterschrift) an den einzelnen Zwischenstatitionen zu einer authentischen Lieferkette von seiner Quelle bis zum Ziel bei.
@@ -41,7 +49,6 @@ Wir können den Prozess der sicheren physischen Lieferketten auf die digitale We
 
 [NOTE]
 Properitäre Ansätze, wie die Nutzung von PDF-Dokumente, die mit Handschrift oder digitaler Signatur versehen werden, können  bis heute die Anforderungen einer digitalen, rechtssicheren Form laut OZG (Online Zusgansgesetz) mit medienbruchfreier Kommunikation nicht leisten und werden deshalb bei der Konzeption nicht weiter betrachtet.          
-
 
 ===  Funktionen eines authentischen Datencontainers 
 Ein Datencontainer kann als funktionale Methode zum Bündeln von fachlichen Datenelementen angesehenw werden. Ein authentischer Datencontainer stellt des weiteren einen manipulationssicheren und authentische Datencontainer dar, dessen Integrität mit kryptografischen Mitteln überprüft werden kann. Die kryptographische Absicherung macht die Unabstreitbarkeit der Aussagen/Daten in einem Container von seiner Quelle möglich.
@@ -70,3 +77,17 @@ Diagramme sind Bäume und gerichtete azyklische Diagramme (DAGs). Eine verallgem
 Diagramme insbesondere der Sonderfälle von Bäumen und DAGs.
 
 ----
+
+== References
+[1] W3C - Decentralized Identifiers (DIDs) v1.0
+https://www.w3.org/TR/did-core/
+
+[2] W3C- Verifiable Credentials Data Model 1.0
+https://www.w3.org/TR/vc-data-model/
+
+[3] DIF - DIDComm Messaging 
+https://identity.foundation/didcomm-messaging/spec/
+
+
+[4] Samuel M. Smith Ph.D., "AUTHENTIC CHAINED DATA CONTAINERS"  v1.03 2021/01/14
+https://github.com/SmithSamuelM/Papers/blob/master/whitepapers/ACDC.web.pdf
