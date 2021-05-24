@@ -1,0 +1,46 @@
+= Registerdatenbank 
+:reproducible:
+
+
+== Einleitung
+
+Registerdatenbanken wurden mit dem Ziel einer zentralen Anlaufstelle zur Auskunft eines Sachstands geschaffen, um die Verwaltungsprozesse effizient zu erledigen.  
+
+Aus Managementsicht scheint dafür eine zentrale Datenablage und Verwaltung der Daten die einzige Lösung zu sein. 
+
+Aus der Vergangenheit wissen wir jedoch, dass zentrale Systeme große Gefahren und Probleme in sich bergen und architektonisch soweit möglich zu vermeiden sind. 
+
+Nachteile eines Zentralsystemens umfassen u.a.: 
+
+* Datenmissbrauch wie z.b: Auswertungen, Verknüpfung,  
+* Inkonsistenzen durch Datenreplikationen
+* Agilitätsverlust bei Systemanpassungen durch komplexe Koordinierungsaufgaben
+* Eigentums- und Kontrollverlust der Daten
+* Komplexe und nicht verwaltbare Rechte- und Zugriffssteuerungen, weshalb oft auf vereinfachte Rollenmodelle zurückgriffen wird, mit denen jedoch die Datenschutzanforderungen nicht ausreichend berücksichtigt werden können.     
+* Schwer oder nicht umsetzbare Gesetzvorgaben wie z.B. DSGVO (GDPR) - z.B. Löschungen können heute of nicht korrekt umgesetzt werden.     
+
+
+Bei der Architekturdefinition und Systemdesign sollte deshalb immer das Credo dezentral, autonom, selbst-souverän zählen, also sollte zuerst immer ein dezentrale Architektur  elaborieren werden, bevor zentrale  
+
+Um ein dezentrale Architektur zu schaffen benötigt es jedoch Expertenwissen, das Managementebene und in einem traditionellen Entwicklerteam meist nicht vorhanen ist, weshalb oft die richtigen sondern die für Manager nachvollziehbare Lösungen    
+
+Viele heute 
+
+Das Register-Modernisierungsgesetzt  Modernisierungsgesetzt 
+
+
+Sowohl technisch als auch organisatorisch oder politisch wissen wir dass eine zentrale Datenhaltung  
+
+  auf den ersten Blick 
+
+im Hinblick auf  
+
+Aus der Vergangenheit wissen wir dass zentrale Systeme   
+
+Architektonisch 
+
+Mit einer Registerdatenbank können 
+
+
+Register werden als Ordungssystem verwendet, einer Person oder Sachstand die lokation konkrete Daten auzufinden.
+Ein Melderegister verwaltet die konkrete Informationen einer Identität  

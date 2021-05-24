@@ -1,0 +1,72 @@
+= Authentische Daten Container  
+Berthold Maier
+Version 0.1, 23.05.2015
+
+:sectnums:         
+:toc:         
+:toclevels: 4                                          
+:toc-title: Authentische Daten Container       
+
+:description: Authentische Daten Containerdocumente per W3C VerifiableCredential
+:keywords: VerifiableCredential, VC, ADC, ACDC
+:imagesdir: ./images
+
+Die Digitalisierung hat die Art des Zusammenlebens und Interkation im Zeitalter der digitalen Revolution komplett verändert.
+Digitale Assistenten sind uns täglich behilflich den Alltag zu meistern und angenehmer zu gestalten. 
+Heute arbeiten und vertrauen wir oft bind mit den digitalen Informationen, ohne eine Verbindlichkeit einzufordern. 
+
+Wenn wir eine gewissen Gradn an Verbidlichkeit und Vertrauen benötigen, versuchen wir diese in der digitalen Welt oft mit alten Mitteln, die uns gedanklich noch nahestehen, wie zum Beispiel das Verlangen einer Handunterschrift und ein abschließender digitaler Scan, Laienhaft umzusetzen.
+Diese Hilflosigkeit eröffnet Digitalisierungsexperten einen große Angriffsfläche Informationen in ihrem Sinne zu verändern und auf das Geschehen Einfluss zu nehmen.
+
+Heute müssen alle digitale Informationen vor jeglicher Art der  Manipulation geschützt werden. Zudem müssen viele  Informationen authentisch, also vom Urheber unbestreitbar sein. Und schließlich muss die Richtigkeit prüfbar sein. 
+
+Moderne Architekturen lösen diese mit zentralen oder föderalen Identity-Management Lösungen. Hier werden Identitäten verwaltet und durch Autorisierungsfunktionen wird ein Verknüpfung zwischen Information und Identität hergestellt, um einen digitalen Grad an Vertrauen zu schaffen. 
+Solche digitale Identitäten haben einen hohen Schutzbedarf, um den Diebstahl und Missbrauch zu verhindern. Ist ein Angreifer erst einmal im Besitz einer digitalen Identität, kann er sehr einfach verdeck Informationen manipulieren und großen Schaden anrichten. Die heute gänigen Lösungen die Verwaltung an den Dienstanbieter oder einen Dritten Identitätsverwalter (Identity Provider) abzugeben ist üblich – Google, Facebook, LinkedIn, oder die Bank, Onlineshop, usw. verwalten unsere Identitäten – führt zu einer Reihe von Problemen. Trauen wir wirklich dem Dienstleister? Ein Dienstleister kann mir meine Identität wegnehmen, sie sperren und mich aus dem digitalen Kreislauf nehmen, er kann mithören alle Tätigkeiten miteinander korrelieren, um mich oder die Umwelt zu beeinflussen. Dieder Kontrollverlust kann daramtische Folgen in einem .Datenecosystem.   
+Wollen wir das und sollen wir uns mit diesem Umstand abfinden? Nein, es wird also ein Konzept der selbstsouveränen Identitätsverwaltung in Kombination mit dezentralem digitalem Vertrauen notwendig. 
+In dem Papier konzentrieren wir uns auf das Herstellen von digitalem Vertrauen in Informationen und weniger um den Aspekt der selbstsouveränen Identitätsverwaltung, was jedoch ein Kernbaustein der Lösung darstellt und unabdingbar damit zusammenhängt. 
+
+
+
+== E
+
+
+=== Authentischer Datencontainer in Behörden und er Wirtschaft
+Das Konzept eines standardisierten authentischen Datencontainers (ADC) stellt in Analogie zu
+einem physischen Container in der Logistik (Versandbehälter) 
+den vertrausnswürdigen und damit sicheren, rückverfolgbaren und manipulationssicheren Warentransport in einem interoperablen Transportökosystem dar.
+
+Container sind dazu in einem standartisierten Format und mit einer Serienkennung augezeichnet entworfe. Sie erhalten einen sicheren Verschluss und ein Siegel zur Manipulationssicherung.  Anhängende Lieferpapier tragen mit den notwendigen Bestätigungen (Stempel/Unterschrift) an den einzelnen Zwischenstatitionen zu einer authentischen Lieferkette von seiner Quelle bis zum Ziel bei.
+
+Wir können den Prozess der sicheren physischen Lieferketten auf die digitale Welt übertragen. Zur Umsetzung wird ein standardisierter authentischer Datencontainer notwendig, der interoperabel von dezentral agierenden Systemen verstanden und verarbeitet werden kann. Anhand desse lässt sich ein authentisches Datenökosystem im Behörden- und Wirtschaftumfeld etablieren. 
+
+[NOTE]
+Properitäre Ansätze, wie die Nutzung von PDF-Dokumente, die mit Handschrift oder digitaler Signatur versehen werden, können  bis heute die Anforderungen einer digitalen, rechtssicheren Form laut OZG (Online Zusgansgesetz) mit medienbruchfreier Kommunikation nicht leisten und werden deshalb bei der Konzeption nicht weiter betrachtet.          
+
+
+===  Funktionen eines authentischen Datencontainers 
+Ein Datencontainer kann als funktionale Methode zum Bündeln von fachlichen Datenelementen angesehenw werden. Ein authentischer Datencontainer stellt des weiteren einen manipulationssicheren und authentische Datencontainer dar, dessen Integrität mit kryptografischen Mitteln überprüft werden kann. Die kryptographische Absicherung macht die Unabstreitbarkeit der Aussagen/Daten in einem Container von seiner Quelle möglich.
+
+Um neben der Echtheit im zweiten Schritt auch die Richtigkeit der Daten sicherzustellen, muss es dem Empfänger ermöglicht werden, die Richtigkeit der enthaltenen Daten oder Aussagen zu prüfen. Ein alleiniges ableiten der Richtigkeit aus der Authentitätsvalidierung ist bei loser Vertrauensbeziehung meist nicht ausreichen. Es muss einfach erkannbar sein, wenn die enthaltenen Daten/Aussagen von einer böswilligen Partei gefälscht oder dem Aussteller absichtlich falsch ausgestellt  wurden. Die Richtigkeitsprüfung verlangt bei einer losen Vertrauensbeziehung meist weitere Beglaubigungen/Bestätigungen durch weitere Parteien per digitaler Signatur. Die Validierung und das dabei erlangte Vertrauen hängt somit von den Richtlinien (Policies) des Prüfers ab und kann von jeder Partei neu selbst definiert werden.       
+
+Ein authentischer Datencontainer muss also Mechnaismen zur Manipuliationssicherung, der Authentizität und Richtigkeit in einem medienbruchfreien Daten-Ecosystem mit notwendiger Rechtssicherheit oder Vertrauen bereitstellen.     
+
+=== Authentische Herkunftskette 
+Datencontainer werden oft durch einen Prozess getragen. Ein Beispiel stellt der Genehmigungsworkflow dar, bei dem oft Veränderungen oder Zufügen von Informationen notwendig sind und Unterschriften geleistet oder verweigert werden. Zur Nachvollziebarkeit muss jegliche Änderung mit Wahrung der Integrität und Authenzität  dokumentiert werden -  die Integrität und Authenzität des Ursprungs darf abei nicht verloren gehen.   
+Dafür wird eine zweites Konzept, den authentischen Herkunftsketten (Authentic Provenance Chains - APCs) notwendig. Eine authentische Datencontainer-Herkunftskette (APC) liefert den  Authentizitätsbeweise aller Transaktionen (Zufügen, Transformationen, Aggregationen und Entfernen) von der Erstellung über alle Statitionen bis zu seiner endgültigen archivierten Ablage.
+
+Damit der Herkunftsnachweis selbst kryptografisch überprüfbar beleibt, muss jede Entität entlang der Datenlieferkette  eine kryptografische Verpflichtung gegenüber der Quelle (n) der empfangenen Daten eingehen und die resultierenden Daten an die nächste Entität in der Kette weitergeben.
+
+Ein solcher Beweis erfordert eine Signatur und Verweis auf die  veränderten oder zugefügten Datenstrukturen.
+Durch die Verkettung kann per rekursivem Validieren entlang der Ketter bis zu seinem Ursprung erfolgen und die Authentizität   belegt werden. 
+
+Zur interoperablen und selbstsouveränen Prüfung sind Standards der Syntax, Kryptography und Semantik mti darauf aufbauenden Tools notwendig.
+
+.Graphen 
+----
+
+Alle Verkettungssemantiken sind wertlos ohne sichere Zuordnung zu jeder beitragenden Quelle von
+Informationen in der Kette. Eine Aggregation von mehr als einer Kette bildet einen Graphen. Sonderfälle von
+Diagramme sind Bäume und gerichtete azyklische Diagramme (DAGs). Eine verallgemeinerte Verkettungssemantik ermöglicht
+Diagramme insbesondere der Sonderfälle von Bäumen und DAGs.
+
+----
