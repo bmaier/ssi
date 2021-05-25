@@ -1,14 +1,15 @@
 = Authentische Daten Container  
-Berthold Maier
-Version 0.1, 23.05.2015
-
+:author: Berthold Maier
+:revnumber: v0.2
+:revdate: 23.05.2022
+:revremark: Draft
 :sectnums:         
-:toc:         
+:toc:          
 :toclevels: 4                                          
 :toc-title: Authentische Daten Container         
 
-:description: Authentische verkettete Daten Containerdokumente per W3C VerifiableCredential
-:keywords: VerifiableCredential, VC, ADC, ACDC
+:description: Umsetzung der Authentischen verketteten Daten- Container auf Basis der SSI Standards W3C VerifiableCredential und DID.
+:keywords: DID, VerifiableCredential, VC, ADC, ACDC
 :imagesdir: ./images
 
 === Digitales Vertrauen und Rechtsicherheit  
