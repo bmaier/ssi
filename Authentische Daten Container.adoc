@@ -69,13 +69,6 @@ Durch die Verkettung kann per rekursivem Validieren entlang der Ketter bis zu se
 
 Zur interoperablen und selbstsouveränen Prüfung sind Standards der Syntax, Kryptography und Semantik mti darauf aufbauenden Tools notwendig.
 
-.Graphen 
-----
-Alle Verkettungssemantiken sind wertlos ohne sichere Zuordnung zu jeder beitragenden Quelle von Informationen in der Kette. Eine Aggregation von mehr als einer Kette bildet einen Graphen. Sonderfälle von
-Diagramme sind Bäume und gerichtete azyklische Diagramme (DAGs). Eine verallgemeinerte Verkettungssemantik ermöglicht
-Diagramme insbesondere der Sonderfälle von Bäumen und DAGs.
-
-----
 
 == References
 [1] W3C - Decentralized Identifiers (DIDs) v1.0
