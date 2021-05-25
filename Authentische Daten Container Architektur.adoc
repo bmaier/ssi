@@ -2,7 +2,7 @@
 :author: Berthold Maier
 :revnumber: v0.3
 :revdate: 28.05.2022
-:revremark: Draft
+:revremark: Draft / Unveröffentlicht
 :sectnums:         
 :toc:          
 :toclevels: 4                                          
@@ -12,9 +12,7 @@
 :keywords: DID, VerifiableCredential, VC, ADC, ACDC
 :imagesdir: ./images
 
-=== Digitales Vertrauen und Rechtsicherheit  
-
-.Motivation
+== Motivation
 Die fortschreitende Digitalisierung hat die Art unseres Zusammenlebens und Interkation im Zeitalter der digitalen Revolution komplett verändert.
 Digitale Assistenten sind uns täglich behilflich den Alltag zu meistern und auch angenehmer zu gestalten. 
 Heute arbeiten und vertrauen wir oft blind den dort genutzten digitalen Informationen, ohne wirklich eine Verbindlichkeit und Echtheit einzufordern oder diese bestätigt zu bekommen. 
@@ -39,7 +37,7 @@ Bezeichtet wird der Standard oft unscharf mit dem Akronym SSI, was so viel wie s
 In dem Papier greifen wir das Konzept AUTHENTIC CHAINED DATA CONTAINERS (ACDC) von Samuel M. Smith Ph.D.[4] auf und konzentrieren uns auf das Herstellen von digitalem Vertrauen in Informationen und weniger um den Aspekt der selbstsouveränen Identitätsverwaltung, die damit zusammenhängt und ein unabdingbar Kernbaustein der Lösung darstellt. 
 
 
-== Authentisches Daten-Ecosystem 
+== Ein authentisches Daten-Ecosystem 
 Das Konzept eines standardisierten authentischen und verketteten Datencontainers (ACDC)[4] stellt in Analogie zu einem physischen Container in der Logistik (Versandbehälter) den vertrausnswürdigen und damit sicheren, rückverfolgbaren und manipulationssicheren Warentransport in einem interoperablen Transportökosystem dar.
 
 Container sind dazu in einem standartisierten Format entworfe und mit einer Serienkennung ausgezeichnet. Sie erhalten einen sicheren Verschluss (Schloss) und ein Siegel zur Manipulationssicherung.  Anhängende Lieferpapier tragen, mit den notwendigen Bestätigungen (Stempel/Unterschrift) an den einzelnen Zwischenstatitionen, zu einer authentischen Lieferkette von seiner Quelle bis zum Ziel bei.
@@ -49,7 +47,7 @@ Wir können den Prozess der sicheren physischen Lieferketten auf die digitale We
 [NOTE]
 Properitäre Ansätze, wie der Einsatz von PDF-Dokumenten, die mit Handschrift oder digitaler Signatur versehen werden, können bis heute die Anforderungen einer digitalen, rechtssicheren Form laut OZG (Online Zusgansgesetz) mit medienbruchfreier Kommunikation nur bedingt erfüllen - strukturierte Information hin zu PDF stellen bereits ein Medienbruch dar - und werden deshalb bei der Konzeption nicht weiter betrachtet.          
 
-===  Funktionen eines authentischen Datencontainers 
+===  Authentische Datencontainer  
 Ein Datencontainer kann als funktionale Methode zum Bündeln von fachlichen Datenelementen angesehenw werden. Ein authentischer Datencontainer (ADC)[4] stellt des weiteren einen manipulationssicheren und authentischen Datencontainer dar, dessen Integrität mit kryptografischen Mitteln stets überprüftbar bleibt. Die kryptographische Absicherung macht die Unabstreitbarkeit der Aussagen/Daten innerhab eines Containers von seiner Quelle möglich.
 
 Um neben der Echtheit im zweiten Schritt auch die Richtigkeit der Daten sicherzustellen, muss dem Empfänger die Freiheit gewährt werden, die Richtigkeit der enthaltenen Daten oder Aussagen weiter zu prüfen. Ein alleiniges ableiten und Vertrauen der Richtigkeit aus der Authentitätsvalidierung ist bei schwacher Vertrauensbeziehung oft nicht ausreichen. Es muss einfach erkennbar sein, wenn die enthaltenen Daten/Aussagen von einer böswilligen Partei gefälscht oder vom Aussteller absichtlich falsch übergeben wurden. Die Richtigkeitsprüfung verlangt bei dieser losen Vertrauensbeziehung meist weitere Bestätigungen bzw. Beglaubigungen durch weitere Parteien. Sie müssen die enthaltenen Daten prüfen und Beglaubigung (Credential) mit ihren authentischen Unterschriften ausstellen (digitaler Signatur). 
@@ -57,7 +55,7 @@ Die Validierung und das dabei erlangte Vertrauen des Konsumenten hängt somit vo
 
 Ein authentischer Datencontainer muss also Mechnaismen zur Verknüpfung, Manipuliationssicherung, der Authentizität und Richtigkeit in einem medienbruchfreien Daten-Ecosystem mit notwendiger Rechtssicherheit bereitstellen.     
 
-=== Authentische verkettete Datencontainer  
+=== Verkettete authentische Datencontainer  
 Datencontainer werden oft durch einen Prozess getragen. Ein Beispiel stellt der Genehmigungsworkflow dar, bei dem oft Veränderungen oder Zufügen von Informationen notwendig sind und Unterschriften geleistet oder verweigert werden. Zur Nachvollziebarkeit muss jegliche Änderung mit Wahrung der Integrität und Authenzität dokumentiert werden - die Integrität und Authenzität des Ursprungs darf dabei nicht verloren gehen.   
 Dafür wird eine zweites Konzept, die authentischen Herkunftsketten (Authentic Provenance Chains - APCs) notwendig. Eine authentische Datencontainer-Herkunftskette (APC) liefert den  Authentizitätsbeweise aller Transaktionen (Zufügen, Transformationen, Aggregationen und Entfernen) von der Erstellung über alle Statitionen bis zu seiner endgültigen archivierten Ablage.
 
@@ -68,8 +66,14 @@ Durch die Verkettung kann per rekursivem Validieren entlang der Ketter bis zu se
 
 Zur interoperablen und selbstsouveränen Prüfung sind Standards der Syntax, Kryptography und Semantik mti darauf aufbauenden Tools notwendig.
 
+== TODO
 
-== References
+[NOTE]
+----
+This paper is a first starting draft and will be enhanced in next few month"
+---- 
+
+== Referenzen
 [1] W3C - Decentralized Identifiers (DIDs) v1.0
 https://www.w3.org/TR/did-core/
 
@@ -78,7 +82,6 @@ https://www.w3.org/TR/vc-data-model/
 
 [3] DIF - DIDComm Messaging 
 https://identity.foundation/didcomm-messaging/spec/
-
 
 [4] Samuel M. Smith Ph.D., "AUTHENTIC CHAINED DATA CONTAINERS"  v1.03 2021/01/14
 https://github.com/SmithSamuelM/Papers/blob/master/whitepapers/ACDC.web.pdf
