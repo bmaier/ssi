@@ -36,7 +36,6 @@ Uns wird oft erst im Fall von Betrug oder Feignews bewusst, dass das Internet oh
 Neue distruptive Technologien und neue Standards führen glücklicherweise gerade zu einem neuen interoperablen und breit akzeptierten Identity-Standard, also der fehlende dezentral agierende Identity Layer wird dem Internet zugefügt. 
 Bezeichtet wird der Standard oft unscharf mit dem Akronym SSI, was so viel wie selbstsouveräne und dezetral agierende Identitäsverwaltung bedeutet. Wichtige Standards dazu sind die W3C Dezentralen Identifyer (DID) [1], die verifizierbaren Berechtigungsnachweise (W3C - Verifiable Credentials) [2] und das Nachrichtenprotokoll DIDComm [3] der DIF Organisation.
 
-=== Ziel 
 In dem Papier greifen wir das Konzept AUTHENTIC CHAINED DATA CONTAINERS (ACDC) von Samuel M. Smith Ph.D.[1] auf und konzentrieren uns auf das Herstellen von digitalem Vertrauen in Informationen und weniger um den Aspekt der selbstsouveränen Identitätsverwaltung, die damit zusammenhängt und ein unabdingbar Kernbaustein der Lösung darstellt. 
 
 
