@@ -1,4 +1,4 @@
-= Authentisches Daten Ecosystem per SSI  
+= Authentisches Daten Ecosystem per SSI
 :author: Berthold Maier
 :revnumber: v0.3
 :revdate: 28.05.2022
@@ -12,29 +12,38 @@
 :keywords: DID, VerifiableCredential, VC, ADC, ACDC
 :imagesdir: ./images
 
+
 == Motivation
 Die fortschreitende Digitalisierung hat die Art unseres Zusammenlebens und Interkation im Zeitalter der digitalen Revolution komplett verändert.
 Digitale Assistenten sind uns täglich behilflich den Alltag zu meistern und auch angenehmer zu gestalten. 
 Heute arbeiten und vertrauen wir oft blind den dort genutzten digitalen Informationen, ohne wirklich eine Verbindlichkeit und Echtheit einzufordern oder diese bestätigt zu bekommen. 
 
+
 In einigen Fällen mag dies unerheblich sein, aber uns ist bewusst, dass in einigen Situationen ein gewisser Grad an Verbidlichkeit und Vertrauen notwendig ist. Nich allzu oft versuchen wir in der digitalen Welt dies mit althergebrachten Mitteln zu lösen, die uns IT Laien gedanklich und handwerklich nahestehen. Ein typisches Beispiel ist das Verlangen einer Handunterschrift auf einem ausgedrucktem Dokument, das nach einem digitalen Scan und abschließender Ablage in einem der vielen Dokumetengräbern -  Dokument Management Systeme (DMS) - landet.
 Diese Hilflosigkeit eröffnet Digitalisierungsexperten eine große Angriffsfläche, Informationen in ihrem Sinne zu verändern und auf das Geschehen Einfluss zu nehmen. 
 
-Die gut gemeinte Lösung, oft auch von einigen IT-Experten implementiert, kosten Zeit und führen zu keiner wirklichen Rechtsicherheit. Heute müssen alle digitale Informationen vor jeglicher Art der Manipulation geschützt werden. Zudem müssen die Informationen authentisch sein, also die Unbestreitbarkeit des Urhebers muss gewährleitet werden. Und schließlich muss die Richtigkeit der Informationen gegeben sein. 
+Viele der gut gemeinten Lösungsarchitekuten, oft auch von Fachexperten propagiert und IT-Experten der alten Generation implementiert, setzen veraltete Architektur- und Lösungsbausteine ein, die aufwändig zu implementieren sind und letztlich zu keiner wirklichen Rechtsicherheit führen. Verlangen wir heute nicht, dass alle digitale Informationen medienbruchfrei verarbeitet werden können und dabei vor jeglicher Art der  Manipulation geschützt sind. Wir fordern authentisch Informationen, also die Unbestreitbarkeit des Urhebers und die nachweisliche Richtigkeit des Inhalts muss gegeben sein.  
 
-Moderne Architekturen lösen diese mit zentralen oder föderalen Identity-Management Lösungen. Hier werden Identitäten in einem System verwaltet und durch Autorisierungsfunktionen wird ein Verknüpfung zwischen Information und Identität hergestellt, um einen  Grad an Vertrauen in der digitalen Welt zu schaffen. 
-Solche digitale Identitäten haben einen hohen Schutzbedarf, um den Diebstahl und Missbrauch zu verhindern. Ist ein Angreifer erst einmal im Besitz einer digitalen Identität, kann er sehr einfach verdeck Informationen manipulieren und großen Schaden anrichten. Die heute gängigen Lösungen treten die Verwaltung an den Dienstanbieter oder einen Dritten Identitätsverwalter (Identity Provider) ab – Google, Facebook, LinkedIn, oder die Bank, Onlineshop, usw. verwalten unsere Identitäten, was zu einer Reihe von Problemen führt. 
+
+Aktuelle Architekturen lösen diese mit zentralen oder föderalen Identity-Management Lösungen im Einklang mit dokumentzentrischen Lösungsbausteinen. Hier werden Identitäten in einem zentralen System verwaltet und durch Autorisierungsfunktionen wird ein Verknüpfung zwischen Information und Identität hergestellt, um einen  Grad an Vertrauen in der digitalen Welt zu schaffen. 
+Solche digitale Identitäten haben einen hohen Schutzbedarf, um den Diebstahl und Missbrauch zu verhindern. Ist ein Angreifer erst einmal im Besitz einer zentral verwalteten digitalen Identität, kann er sehr einfach verdeck Informationen manipulieren und großen Schaden anrichten. Bei den heute gängigen Lösungen treten wir die Verwaltung an Dienstanbieter oder Dritte Identitätsverwalter (Identity Provider) ab – Google, Facebook, LinkedIn, oder die Hausbank, Onlineshop, usw. verwalten unsere Identitäten, was zu einer Reihe von Problemen führt. 
 Trauen wir wirklich dem Dienstanbeiter? Ein Dienstanbeiter kann mir meine Identität wegnehmen, sie sperren und mich aus dem digitalen Kreislauf nehmen, er kann mithören alle Tätigkeiten miteinander korrelieren, um mich oder die Umwelt zu beeinflussen. Der damit einhergehende Kontrollverlust kann daramtische Folgen in einem modernen Datenecosystem haben.   
-Wollen wir das und sollen wir uns mit diesem Umstand heute und in Zukunft abfinden? **Nein**, es wird also ein Konzept der selbstsouveränen Identitätsverwaltung in Kombination mit dezentralem digitalem Vertrauen notwendig. 
+Wollen wir das und sollen wir uns mit diesem Umstand heute und in Zukunft abfinden? Wir nicht, weshalb ein Konzept der selbstsouveränen Identitätsverwaltung in Kombination mit dezentralem digitalem Vertrauen notwendig wird. 
+
 
 
 == Einleitung
-Uns wird oft erst im Fall von Betrug oder Feignews bewusst, dass das Internet ohne Identitätsnetzwerk (Identity Layer) geschaffen wurde. Über die Jahre haben sich unzählige properitäre Lösungen etabliert, die jedoch bis heute keinen durchschlagenden Erfolg erlangt haben. Entweder waren sie zu einseitig, zu schwer zu administrieren (PKI) oder zentral (die Internet-Architektur ist dezentral ausgelegt) bei einem Internet-Gigaten (Identity-Providern) angesiedelt und deshalb nicht für jeden Anwendungsfall mit dem notwendigen Vertrauenslevel nutzbar.    
+Unser Ziel ist die Verbreitung eines medienbruchfrei agierendes Internetdatenecosystem der dritten Generation, das vertrauensvoll ist und auf rechtsichere Informationen und Aussagen basiert. 
+Im täglichen Geschehen wird uns oft erst im Fall von Betrug oder Feignews bewusst, dass das Internet ohne Identitätsnetzwerk (Identity Layer) geschaffen wurde. Über die Jahre haben sich unzählige properitäre Lösungen etabliert, die jedoch bis heute keinen durchschlagenden Erfolg erlangt haben. Entweder waren sie zu einseitig auf einen Aspekt konzipiert, zu schwer zu administrieren (PKI) oder zentral bei einem Internet-Gigaten (Identity-Providern) angesiedelt und deshalb nicht für jeden Anwendungsfall mit dem notwendigen Vertrauenslevel nutzbar. yyx 
 
-Neue distruptive Technologien und neue Standards führen glücklicherweise gerade zu einem neuen interoperablen und breit akzeptierten Identity-Standard, also der fehlende dezentral agierende Identity Layer wird dem Internet zugefügt. 
-Bezeichtet wird der Standard oft unscharf mit dem Akronym SSI, was so viel wie selbstsouveräne und dezetral agierende Identitäsverwaltung bedeutet. Wichtige Standards dazu sind die W3C Dezentralen Identifyer (DID) [1], die verifizierbaren Berechtigungsnachweise (W3C - Verifiable Credentials) [2] und das Nachrichtenprotokoll DIDComm [3] der DIF Organisation.
+Die Internet-Architektur ist jedoch dezentral konzipiert, weshalb auch ein dezentrales Identitätsmangementkonzept notwendig ist.     
+Neue distruptive Technologien wie Distributed Ledger (Blockchain, IPFS, usw.) und neue dezentrale Standards führen glücklicherweise gerade zu einem neuen dezentralen und breit akzeptierten Identity-Standard, also der fehlende dezentral agierende Identity Layer wird gerade dem Internet zugefügt. 
+Bezeichtet wird der Standard oft unnscharf mit dem Akronym SSI, was so viel wie selbstsouveräne und dezetral agierende Identitäsverwaltung bedeutet. Wichtige Standards dazu sind die W3C Dezentralen Identifyer (DID) [1], die verifizierbaren Berechtigungsnachweise (W3C - Verifiable Credentials) [2] und das Nachrichtenprotokoll DIDComm [3] der DIF Organisation.
 
-In dem Papier greifen wir das Konzept AUTHENTIC CHAINED DATA CONTAINERS (ACDC) von Samuel M. Smith Ph.D.[4] auf und konzentrieren uns auf das Herstellen von digitalem Vertrauen in Informationen und weniger um den Aspekt der selbstsouveränen Identitätsverwaltung, die damit zusammenhängt und ein unabdingbar Kernbaustein der Lösung darstellt. 
+In diesem Papier greifen wir u.a. das Konzept AUTHENTIC CHAINED DATA CONTAINERS (ACDC) von Samuel M. Smith Ph.D.[4] auf und konzentrieren uns auf das Herstellen von digitalem Vertrauen in Informationen und weniger um den Aspekt der selbstsouveränen Identitätsverwaltung, die damit zusammenhängt und ein unabdingbar Kernbaustein der Lösung darstellt. 
+
+Letztlich fassen wir im Dokument auf Grundage dieser neuen Konzepte einen dezentralen Lösungsansatz zusammen, um Vertrauen und Rechstsicherheit durch digitale Unterschriften per manipulationssichern und authentischen Informationscontainer zu schaffen. 
+Das Konzept soll die Grundlage zur Umsetzung von rechtsicheren Workflows mit rechtsichern Unterschriften auf Anträge, Verträge oder beliebigen Urkunden mit Wahrung des Datenschutzes (DSGVO/GDPR) sein.
 
 
 == Ein authentisches Daten-Ecosystem 
