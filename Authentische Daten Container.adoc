@@ -1,0 +1,89 @@
+= Authentisches Daten Ecosystem per SSI  
+:author: Berthold Maier
+:revnumber: v0.3
+:revdate: 28.05.2022
+:revremark: Draft
+:sectnums:         
+:toc:          
+:toclevels: 4                                          
+:toc-title: Authentische Daten Ecosystem Architektur per SSI         
+
+:description: Umsetzung der Authentischen verketteten Daten- Container auf Basis der SSI Standards W3C VerifiableCredential und DID.
+:keywords: DID, VerifiableCredential, VC, ADC, ACDC
+:imagesdir: ./images
+
+=== Digitales Vertrauen und Rechtsicherheit  
+
+.Motivation
+Die fortschreitende Digitalisierung hat die Art unseres Zusammenlebens und Interkation im Zeitalter der digitalen Revolution komplett verändert.
+Digitale Assistenten sind uns täglich behilflich den Alltag zu meistern und auch angenehmer zu gestalten. 
+Heute arbeiten und vertrauen wir oft blind den dort genutzten digitalen Informationen, ohne wirklich eine Verbindlichkeit und Echtheit einzufordern oder diese bestätigt zu bekommen. 
+
+In einigen Fällen mag dies unerheblich sein, aber uns ist bewusst, dass in einigen Situationen ein gewisser Grad an Verbidlichkeit und Vertrauen notwendig ist. Nich allzu oft versuchen wir in der digitalen Welt dies mit althergebrachten Mitteln zu lösen, die uns IT Laien gedanklich und handwerklich nahestehen. Ein typisches Beispiel ist das Verlangen einer Handunterschrift auf einem ausgedrucktem Dokument, das nach einem digitalen Scan und abschließender Ablage in einem der vielen Dokumetengräbern -  Dokument Management Systeme (DMS) - landet.
+Diese Hilflosigkeit eröffnet Digitalisierungsexperten eine große Angriffsfläche, Informationen in ihrem Sinne zu verändern und auf das Geschehen Einfluss zu nehmen. 
+
+Viele der gut gemeinten Lösungsarchitekuten, oft auch von Fachexperten propagiert und IT-Experten der alten Generation implementiert, setzen veraltete Architektur- und Lösungsbausteine ein, die aufwändig zu implementieren sind und letztlich zu keiner wirklichen Rechtsicherheit führen. Verlangen wir heute nicht, dass alle digitale Informationen medienbruchfrei verarbeitet werden können und dabei vor jeglicher Art der  Manipulation geschützt sind. Wir fordern authentisch Informationen, also die Unbestreitbarkeit des Urhebers und die nachweiliche Richtigkeit des Inhalts.  
+
+Aktuelle Architekturen lösen diese mit zentralen oder föderalen Identity-Management Lösungen im Einklang mit dokumentzentrischen Lösungsbausteinen. Hier werden Identitäten in einem zentralen System verwaltet und durch Autorisierungsfunktionen wird ein Verknüpfung zwischen Information und Identität hergestellt, um einen  Grad an Vertrauen in der digitalen Welt zu schaffen. 
+Solche digitale Identitäten haben einen hohen Schutzbedarf, um den Diebstahl und Missbrauch zu verhindern. Ist ein Angreifer erst einmal im Besitz einer zentral verwalteten digitalen Identität, kann er sehr einfach verdeck Informationen manipulieren und großen Schaden anrichten. Bei den heute gängigen Lösungen treten wir die Verwaltung an Dienstanbieter oder Dritte Identitätsverwalter (Identity Provider) ab – Google, Facebook, LinkedIn, oder die Hausbank, Onlineshop, usw. verwalten unsere Identitäten, was zu einer Reihe von Problemen führt. 
+Trauen wir wirklich dem Dienstanbeiter? Ein Dienstanbeiter kann mir meine Identität wegnehmen, sie sperren und mich aus dem digitalen Kreislauf nehmen, er kann mithören alle Tätigkeiten miteinander korrelieren, um mich oder die Umwelt zu beeinflussen. Der damit einhergehende Kontrollverlust kann daramtische Folgen in einem modernen Datenecosystem haben.   
+Wollen wir das und sollen wir uns mit diesem Umstand heute und in Zukunft abfinden? Wir nicht, weshalb ein Konzept der selbstsouveränen Identitätsverwaltung in Kombination mit dezentralem digitalem Vertrauen notwendig wird. 
+
+
+== Einleitung
+Unser Ziel ist die Verbreitung eines medienbruchfrei agierendes Internetdatenecosystems der dritten Generation, das vertrauensvoll ist und auf rechtsichere Informationen und Aussagen basiert. 
+Im täglichen Geschehen wird uns oft erst im Fall von Betrug oder Feignews bewusst, dass das Internet ohne Identitätsnetzwerk (Identity Layer) geschaffen wurde. Über die Jahre haben sich unzählige properitäre Lösungen etabliert, die jedoch bis heute keinen durchschlagenden Erfolg erlangt haben. Entweder waren sie zu einseitig auf einen Aspekt konzipiert, zu schwer zu administrieren (PKI) oder zentral bei einem Internet-Gigaten (Identity-Providern) angesiedelt und deshalb nicht für jeden Anwendungsfall mit dem notwendigen Vertrauenslevel nutzbar. 
+
+Die Internet-Architektur ist jedoch dezentral konzipiert, weshalb auch ein dezentrales Identitätsmangementkonzept notwendig ist.     
+Neue distruptive Technologien wie Distributed Ledger (Blockchain, IPFS, usw.) und neue dezentrale Standards führen glücklicherweise gerade zu einem neuen dezentralen und breit akzeptierten Identity-Standard, also der fehlende dezentral agierende Identity Layer wird gerade dem Internet zugefügt. 
+Bezeichtet wird der Standard oft unnscharf mit dem Akronym SSI, was so viel wie selbstsouveräne und dezetral agierende Identitäsverwaltung bedeutet. Wichtige Standards dazu sind die W3C Dezentralen Identifyer (DID) [1], die verifizierbaren Berechtigungsnachweise (W3C - Verifiable Credentials) [2] und das Nachrichtenprotokoll DIDComm [3] der DIF Organisation.
+
+In diesem Papier greifen wir u.a. das Konzept AUTHENTIC CHAINED DATA CONTAINERS (ACDC) von Samuel M. Smith Ph.D.[4] auf und konzentrieren uns auf das Herstellen von digitalem Vertrauen in Informationen und weniger um den Aspekt der selbstsouveränen Identitätsverwaltung, die damit zusammenhängt und ein unabdingbar Kernbaustein der Lösung darstellt. 
+
+Letztlich fassen wir im Dokument auf Grundage dieser neuen Konzepte einen dezentralen Lösungsansatz zusammen, um Vertrauen und Rechstsicherheit durch digitale Unterschriften per manipulationssichern und authentischen Informationscontainer zu schaffen. 
+Das Konzept soll die Grundlage zur Umsetzung von rechtsicheren Workflows mit rechtsichern Unterschriften auf Anträge, Verträge oder beliebigen Urkunden mit Wahrung des Datenschutzes (DSGVO/GDPR) sein.
+
+
+== Authentisches Daten-Ecosystem 
+Das Konzept eines standardisierten authentischen und verketteten Datencontainers (ACDC)[4] stellt in Analogie zu einem physischen Container in der Logistik (Versandbehälter) den vertrausnswürdigen und damit sicheren, rückverfolgbaren und manipulationssicheren Warentransport in einem interoperablen Transportökosystem dar.
+
+Physiche Versandbehälter (Container) sind dazu in einem standartisierten Format entworfe und mit einer Serienkennung ausgezeichnet. Sie erhalten einen sicheren Verschluss (Schloss) und zusätzlich ein Siegel zur Manipulationssicherung.  Anhängende Lieferpapier tragen, mit den notwendigen Bestätigungen (Stempel/Unterschrift) an den einzelnen Zwischenstatitionen, zu einer authentischen Lieferkette von seiner Quelle bis zum Ziel bei.
+
+Wir können den Prozess der sicheren physischen Lieferketten der Container auf die digitale Welt übertragen. Zur Umsetzung wird ein standardisierter Datencontainer notwendig, der durch technische Maßnahmen authentisch ist und interoperabel von dezentral agierenden Systemen verstanden und verarbeitet werden kann. Anhand dessen lässt sich ein authentisches Datenecosystem im Behörden- und Wirtschaftumfeld etablieren. 
+
+[NOTE]
+Properitäre Ansätze, wie beispielweise der Einsatz von PDF-Dokumenten, die mit Handschrift oder digitaler Signatur versehen werden, können bis heute die Anforderungen einer rechtssicheren digitalen Form laut OZG (Online Zusgansgesetz) zur medienbruchfreien Kommunikation nur bedingt erfüllen - strukturierte Information im PDF Format auszutauschen stellt bereits ein Medienbruch dar - und werden deshalb bei der Konzeption nicht weiter betrachtet.          
+
+===  Funktionen eines authentischen Datencontainers 
+Ein Datencontainer kann als funktionale Methode zum Bündeln von fachlichen Datenelementen angesehenw werden. Authentische wir er, wenn dessen Integrität mit kryptografischen Mitteln sichergestellt wird und diese vom Empfänger stets überprüftbar bleibt. Die kryptographische Absicherung mit enthaltenen Identitätsaussagen machen die Echtheit und Unabstreitbarkeit der Aussagen/Daten innerhab eines Containers möglich.
+
+Um neben der Echtheit im zweiten Schritt auch die Richtigkeit der Daten sicherzustellen, muss dem Empfänger die Freiheit gewährt werden, die Richtigkeit der enthaltenen Daten oder Aussagen weiter zu prüfen. Ein alleiniges ableiten und Vertrauen in die Richtigkeit aus duch die Authentitätsvalidierung ist bei schwacher Vertrauensbeziehung nicht ausreichend. Es muss einfach erkennbar sein, wenn die enthaltenen Daten/Aussagen vom Aussteller absichtlich falsch niedergschrieben wurden. Die Richtigkeitsprüfung verlangt bei der losen Vertrauensbeziehung weitere Bestätigungen bzw. Beglaubigungen durch weitere Parteien. Sie müssen die enthaltenen Daten prüfen und Beglaubigung (Credential) mit ihren authentischen Unterschriften ausstellen (digitaler Signatur). 
+Die Validierung und das dabei erlangte Vertrauen des Konsumenten hängt somit von den Richtlinien (Policies) des Prüfers ab und kann von jeder Partei selbst neu definiert werden.       
+
+Ein authentischer Datencontainer muss also Mechnaismen zur Verknüpfung, Manipuliationssicherung, der Authentizität und Richtigkeit in einem medienbruchfreien Daten-Ecosystem mit notwendiger Rechtssicherheit bereitstellen.     
+
+=== Authentische verkettete Datencontainer  
+Datencontainer werden oft durch einen Prozess getragen. Ein Beispiel stellt der Genehmigungsworkflow dar, bei dem oft Veränderungen oder Zufügen von Informationen notwendig sind und Unterschriften geleistet oder verweigert werden. Zur Nachvollziebarkeit muss jegliche Änderung mit Wahrung der Integrität und Authenzität dokumentiert werden - die Integrität und Authenzität des Ursprungs darf dabei nicht verloren gehen.   
+Dafür wird eine zweites Konzept, die authentischen Herkunftsketten (Authentic Provenance Chains - APCs) notwendig. Eine authentische Datencontainer-Herkunftskette (APC) liefert den  Authentizitätsbeweise aller Transaktionen (Zufügen, Transformationen, Aggregationen und Entfernen) von der Erstellung über alle Statitionen bis zu seiner endgültigen archivierten Ablage.
+
+Damit der Herkunftsnachweis selbst kryptografisch überprüfbar beleibt, muss jede Entität entlang der Datenlieferkette eine kryptografische Verpflichtung gegenüber der Quelle(n) der empfangenen Daten eingehen und die resultierenden Daten an die nächste Entität in der Kette weitergeben.
+
+Ein solcher Beweis erfordert eine Signatur und Verweis auf die veränderten oder zugefügten Datenstrukturen.
+Durch die Verkettung kann per rekursivem Validieren entlang der Ketter bis zu seinem Ursprung erfolgen und die Authentizität belegt werden. 
+
+Zur interoperablen und selbstsouveränen Prüfung sind Standards der Syntax, Kryptography und Semantik mti darauf aufbauenden Tools notwendig.
+
+
+== References
+[1] W3C - Decentralized Identifiers (DIDs) v1.0
+https://www.w3.org/TR/did-core/
+
+[2] W3C- Verifiable Credentials Data Model 1.0
+https://www.w3.org/TR/vc-data-model/
+
+[3] DIF - DIDComm Messaging 
+https://identity.foundation/didcomm-messaging/spec/
+
+
+[4] Samuel M. Smith Ph.D., "AUTHENTIC CHAINED DATA CONTAINERS"  v1.03 2021/01/14
+https://github.com/SmithSamuelM/Papers/blob/master/whitepapers/ACDC.web.pdf

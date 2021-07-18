@@ -1,0 +1,29 @@
+= Identity API
+
+
+Somtime we need to understabd the steps required to interact with a decentraliced identity network and how to create and mange verifiable credentials.
+
+
+== DID API
+In this section we describe the most relevant operations required in decentraliced identity network. 
+
+=== DID Creation API   
+Creating an identity and publishing that as a DID is a quite complicated process. 
+You can use many low level APIs and build your DID in many steps.    
+** First you need to generate a keypair (public and private keys), 
+** Afterwards you create an unique distributed identifier. 
+** Next the DID Document has to be created that is derived from the generated public key. 
+** Some of the DID service added to the DID Document as delivered with parameters   
+** Sometimes you will publishe that to an identity network (eg. blockchain, tangel, ipfs, web, etc.). 
+** Lastly, the generated private key needs to be stored and managed with the associated DID in a secure manner.
+
+An HighLevel API does all this steps in a single line of code.
+The API can be configured with factories to attacht different secret stors, did-netowrks, DID-Document templates.
+
+For most of the operations this high level API is sufficient. In some scepical cases you can use the low level API to execute the intended steps in addition.  
+
+
+PROXY=HE112113.emea1.cds.t-internal.com:8080
+NO_PROXY=173.17.0.*,173.17.0.101,173.17.0.102,173.17.0.103,173.17.0.104,0.0.0.0,localhost,127.0.0.1,10.0.75.1,10.0.75.*,*.telekom.de,*t-systems.com,*.telekom.com
+
+docker run -d     -p 21000:21000 --name atlas    sburn/apache-atlas /opt/apache-atlas-2.1.0/bin/atlas_start.py
