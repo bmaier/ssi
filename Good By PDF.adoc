@@ -12,68 +12,20 @@
 :imagesdir: ./images
 
 
-== 
-Es ist Zeit darüber zu Sprechen wie uns das PDF Format beim Wandel zur digitalen Welt hemmt.
+== Motivation
+Es ist Zeit darüber zu sprechen wie uns das PDF Format beim Wandel zur digitalen Welt hemmt.
 Hier sind einige Gründe warum wir das PDF Format hinter uns lassen sollten.
 
 Verträge: 
-Immer mehr Unternehmen breiten ihr Geschäftsmodell auf den Onlinehandel und rein medienbruchfreie digitale Kommunikation aus - die schnelle, ,effizieten udn sichere digitale Verarbeitung ist hier ein wichtiges Kriterium.
-Wie bei jendem Gschäft kommt es auch beim Online-Handel zu Verträgen und diese müssen spätestens bei einer Auseindersetzung eine rechtssichere Form aufweisen. Die Lösung mit Unterschrift auf einem Dokument, Scan und Ablage in einem DMS ist nicht nur unständlich, sondern auch nur bedingt rechtsicher.  Die zweite Lösung der digitalen Signatur (X.509 Zertifikat) auf einem PDF ist vielversprechend, doch aufgrund der fehlenden Verbreitung und schwierigen Anwendbarkeit nur theoretisch eine Option.   
-Egal wie einfach oder Komplex die Lösungen sind, am Ende habe ich ein unstrukturiertes Dokument, das nicht automatisiert verwarbeitet werden kann. Es muss also in eine strukturierte Form umgewandelt werden, was Fehlerfrei fast nur manuell möglich ist - auch KI-Methoden sind nur eine Reporduktion und können nicht zu 100% die Richtigkeit belegen. 
+Immer mehr Unternehmen breiten ihr Geschäftsmodell auf den Onlinehandel und rein digitale Kommunikation aus. Die schnelle,effizieten, sichere und medienbruchfreie digitale Verarbeitung ist hier ein wichtiges Kriterium.
+Wie bei jendem Gschäft kommt es auch beim Online-Handel zu Verträgen und diese müssen spätestens bei einer Auseindersetzung eine rechtssichere Form aufweisen - die EU eIDAS Grundverordnung regelt dies. Die Lösung mit Unterschrift auf einem Dokument, Scan und Ablage in einem DMS ist möglich, aber sehr unständlich und auch nur bedingt rechtsicher. Die oft gewählte Lösung der digitalen Signatur (X.509 Zertifikat) in Verbindung mit einem PDF Dokument stellt eine Möglichkeit der  fortgeschrittenen oder quaifizierten Signatur dar und klingt zuerst einmal vielversprechend. Der Verlust der strukturierten Informationen im PDF Format schränkt jedoch eine spätere  automatisierte Verbreitung enorm ein und ist deshalb in der  modernen digitalisierten Welt nur eine theoretisch Option.   
+
+
+Liegt ein PDF Dokument einmal vor, Es muss also in eine strukturierte Form umgewandelt werden, was Fehlerfrei fast nur manuell möglich ist - auch KI-Methoden sind nur eine Reporduktion und können nicht zu 100% die Richtigkeit belegen. 
 Gefordert ist aber eine medienbruchfrei Kommunikation, die zeitgleich rechtssicher ist. Hier scheidet also PDF aus. 
 
 Behördenanträge:
-Das Online-Zusgansgesetzt (OZG) fordert eine Digitalen und medeinbruchfreien    
+Das Online-Zusgansgesetzt (OZG) fordert einen digitalen und medeinbruchfreien Austausch 
 
 
 
-
- und müssen hier  größten Vermögenswerte - Verträge - erkennen, markiert dies auch den Beginn des Endes von PDF-Verträgen.
-
-
-
-
-Da immer mehr Unternehmen die Vorteile der Digitalisierung ihrer größten Vermögenswerte - Verträge - erkennen, markiert dies auch den Beginn des Endes von PDF-Verträgen.
-
-
-Es ist Zeit, PDF hinter sich zu lassen und digitale Verträge zu begrüßen. Hier sind 6 Gründe warum.
-Die Zukunft von Verträgen besteht zu 100% aus webbasierten, von HTML erstellten und intelligenten Verträgen.
-
-
-PDF gehört in die Vergangenheit
-Fügen Sie der PDF-Datei eine elektronische Signatur hinzu und nennen Sie sie bei Bedarf einen „digitalen Vertrag“. Solange es sich um eine PDF-Datei handelt, werden Sie die Vorteile wirklich digitaler Verträge, die auf HTML basieren, nicht erleben. Was wir als intelligente Verträge bezeichnen möchten.
-
-PDF ist ein Bildformat. Denken Sie darüber nach: Warum möchten Sie ein Bild von Papier sehen, wenn Sie vor Ihrem Computerbildschirm sitzen? Wir bei Oneflow glauben, dass PDF-Verträge in den nächsten 10 Jahren mehr oder weniger aussterben werden.
-
-Für den Anfang ist PDF eine Abkürzung für Portable Document Format. Der größte Vorteil von PDF besteht darin, dass das genaue Erscheinungsbild eines Dokuments beibehalten wird, unabhängig davon, auf welcher Plattform es angezeigt oder gedruckt wird.
-
-PDF ist ein Bildformat. Denken Sie darüber nach: Warum möchten Sie ein Bild von Papier sehen, wenn Sie vor Ihrem Computerbildschirm sitzen? Wir bei Oneflow glauben, dass PDF-Verträge in den nächsten 10 Jahren mehr oder weniger aussterben werden.
-
-Geben Sie intelligente Verträge ein
-HTML - darum geht es bei Smart Contracts - ist die Sprache des Web. HTML-Dokumente sind für die Anzeige auf dem Bildschirm und für die Interaktivität ausgelegt. Sie sollen bei Bedarf über Computer abgerufen und nicht gedruckt werden.
-
-Für viele ist die Entscheidung, mit PDF-Verträgen zu arbeiten, oft eine Entscheidung, die eher aus Bequemlichkeit als aus Gründen getroffen wird. In dieser jüngsten Studie von Jakob Nielsen wurde festgestellt, dass PDF einige schwerwiegende Usability-Probleme aufweist und „nicht für den menschlichen Verzehr geeignet“ ist.
-
-Sechs kluge Gründe
-Berücksichtigen Sie diese sechs Faktoren, wenn Sie sich entscheiden, ob Sie sich an die alten PDF-Verträge halten oder intelligente Verträge annehmen möchten:
-
-Ansicht auf Mobilgeräten
-Der PDF-Vertrag reagiert nicht - Sie müssen zoomen und scrollen, um den PDF-Vertrag auf dem Telefon zu lesen
-Smart Contract reagiert und sieht unabhängig von der Bildschirmgröße umwerfend aus
-Übertragen von Daten
-PDF-Vertrag ist ein Bild - Sie können nicht einfach Daten aus dem Vertrag extrahieren
-Smart Contract ist wirklich digital - Sie können Vertragsdaten einfach extrahieren und exportieren, um sie an anderer Stelle zu verwenden, z. B. in Ihrem CRM-System
-Suche nach bestimmten Daten
-Möglicherweise können Sie in Ihrem PDF-Vertrag nach einem bestimmten Begriff oder Ausdruck suchen, wenn Sie manuell „Felder“ mit den spezifischen Begriffen hinzufügen. Sie können jedoch nicht alle PDF-Verträge auf einmal durchsuchen
-Sie müssen keine Felder zu intelligenten Verträgen hinzufügen - jedes Wort ist wie das Internet durchsuchbar! Außerdem können Sie alle Ihre Smart-Verträge auf einmal nach Tags, Datum oder Schlüsselwörtern durchsuchen und filtern - es ist, als würden Sie Ihre Verträge mit Tabellenkalkulationsfunktionen googeln
-Schützen Sie die Integrität von Inhalten
-PDF-Verträge können problemlos von anderen geändert werden, ohne dass digitale Spuren hinterlassen werden, wenn diese von Anfang an nicht ordnungsgemäß eingerichtet wurden. Selbst wenn sie ordnungsgemäß eingerichtet sind, ist es schwierig, die Kontrolle durchzusetzen
-Mit intelligenten Verträgen hat der Autor die volle Kontrolle darüber, was und wer den Vertrag ändern kann, und bietet einen vollständigen Prüfpfad
-Fehler minimieren
-Um einen neuen PDF-Vertrag zu erstellen, müssen Sie häufig die Quelldatei suchen, höchstwahrscheinlich in Word, dann bearbeiten und als PDF speichern. Während des Vorgangs müssen Sie nichts auf Fehler prüfen oder das unbeabsichtigte Entfernen wichtiger Absätze verhindern
-Intelligente Vertragsvorlagen sind zentralisiert und dynamisch, sodass der Autor bestimmte Abschnitte sperren und Teile steuern kann, die geändert werden können. So wird sichergestellt, dass das Risiko von Fehlern und die Einhaltung von Regeln und Richtlinien minimal ist
-Arbeite an einer Version
-Der PDF-Vertrag ist so statisch wie ein Papiervertrag. Sie können Kommentare hinzufügen, aber alles kann ziemlich chaotisch werden, da mehr Stakeholder involviert sind. Außerdem gibt es keine einfache Möglichkeit, festzustellen, ob jeder Benutzer an der neuesten Version des Vertrags gearbeitet hat
-Alles rund um intelligente Verträge wird nachverfolgt und nur die neueste Version wird bearbeitet. Außerdem wird jeder Benutzer benachrichtigt, wenn jemand mit dem Vertrag interagiert hat
-Über den Autor
-Ling liebt Marketing und Wein. Marketing für Ling nutzt Ideen, um die Meinung zu ändern. Nadel bewegen. Verkauf einfacher machen. Als CMO von Oneflow ist dies das Rätsel, das sie und ihr Team jeden Tag lösen, um ihr Leben zu vervollständigen.
